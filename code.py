@@ -1,12 +1,9 @@
-default_a = 7
-default_b = 2
-default_c = 8
-def triangle_perimeter(a = default_a, b = default_b, c = default_c):
-    P_tr = a + b + c 
-    return P_tr
-def triangle_area(a = default_a, b = default_b, c = default_c):
-    p = (a + b + c)/2   #Полупериметр треугольника
-    S_tr = (p*(p - a)*(p - b)*(p - c))**0.5     #Формула Герона
-    print(S_tr)    
-
-triangle_area()
+default_radius = 5
+def circle_perimeter(R = default_radius):
+    print(f'circle_perimeter |{R}|')
+    P_circle = 2 * 3.14 * R
+    return P_circle
+def circle_area(R = default_radius):
+    print(f'circle_area |{R}|')
+    S_circle = 3.14 * R * R
+    return S_circle
